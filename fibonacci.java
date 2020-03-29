@@ -1,19 +1,19 @@
 import java.util.*;
 class fibonacci
 {
-	static int a=0,b=1,c;
+	static int b=0,c=1,d;
 	public static void main(String [] args)
 	{
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number upto you want to print");
+		System.out.println("Enter the number upto you ");
 		int num = sc.nextInt();
-		System.out.print(a+" "+b+" ");
+		System.out.print(b+" "+c+" ");
 		for(int i=1;i<num;i++)
 		{
-			c=a+b;
-			System.out.print(c+" ");
-			a=b;
+			d=b+c;
+			System.out.print(d+" ");
 			b=c;
+			c=d;
 		}
 				
 	}
